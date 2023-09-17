@@ -2,7 +2,8 @@
 
 read -r capacity </sys/class/power_supply/BAT0/capacity
 read -r status </sys/class/power_supply/BAT0/status
-if [ "$status" = "Charging"]; then
+
+if [ "$status" = "Charging" ]; then
     printf " %s%%" "$capacity"
 else
     if [ "$capacity" -ge 90 ]; then
@@ -20,4 +21,6 @@ else
     else
         ICON=""
 
+    fi
     printf "$ICON %s%%" "$capacity"
+fi
