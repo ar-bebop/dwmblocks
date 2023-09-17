@@ -5,7 +5,7 @@ ICONc=" " # icon for critical temperatures
 
 crit=70 # critical temperature
 
-read -r temp </sys/class/thermal/thermal_zone0/temp
+read -r temp </sys/class/thermal/thermal_zone8/temp
 temp="${temp%???}"
 
 if [ "$temp" -lt "$crit" ] ; then
