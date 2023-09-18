@@ -45,6 +45,7 @@ static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
         { PATH("cpu_temp.sh"),          NULL,                           1,              0},
         { PATH("battery.sh"),           NULL,                           30,             0},
+        { PATH("volume.sh"),            PATH("volume_button.sh"),       0,              2},
         { PATH("calendar.sh"),          NULL,                           1,              0},
         { PATH("moon.sh"),              NULL,                           3600,           0},
         { NULL } /* just to mark the end of the array */
