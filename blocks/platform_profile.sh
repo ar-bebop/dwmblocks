@@ -1,14 +1,14 @@
 #!/bin/sh
 
-ICONh="⚢"
-ICONm="⚠"
-ICONl="⚙"
+ICON_HIGH="⚢"
+ICON_MED="⚠"
+ICON_LOW="⚙"
 
 case $(cat /sys/firmware/acpi/platform_profile) in
     performance)
-        printf '%s' "$ICONh";;
+        printf '%s!' "$ICON_HIGH";;
     balanced)
-        printf '%s' "$ICONm";;
+        printf '%s;' "$ICON_MED";;
     low-power)
-        printf '%s' "$ICONl";;
+        printf '%s.' "$ICON_LOW";;
 esac

@@ -45,6 +45,7 @@ static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
         { PATH("platform_profile.sh"),  NULL,                           8,              0},
         { PATH("cpu_temp.sh"),          NULL,                           4,              0},
+        { PATH("light.sh"),             NULL,                           4,              0},
         { PATH("battery.sh"),           NULL,                           32,             0},
         { PATH("volume.sh"),            PATH("volume_button.sh"),       0,              2},
         { PATH("calendar.sh"),          NULL,                           1,              0},

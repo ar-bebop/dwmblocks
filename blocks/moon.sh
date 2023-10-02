@@ -4,19 +4,19 @@ PHASE=$(curl -s "https://www.moongiant.com/phase/today" | grep -oP "Phase: <span
 
 case "$PHASE" in
     "New Moon")
-        printf "🌕";;
+        printf "🌕";;
     "Waxing Crescent")
-        printf "🌖";;
+        printf "🌖";;
     "Firt Quarter")
-        printf "🌗";;
+        printf "🌗";;
     "Waxing Gibbous")
-        printf "🌘";;
+        printf "🌘";;
     "Full Moon")
-        printf "🌑";;
+        printf "🌑";;
     "Waning Gibbous")
-        printf "🌒";;
+        printf "🌒";;
     "Last Quarter")
-        printf "🌓";;
+        printf "🌓";;
     "Waning Crescent")
-        printf "🌔";;
+        printf "🌔";;
 esac
