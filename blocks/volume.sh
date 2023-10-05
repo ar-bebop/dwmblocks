@@ -8,9 +8,9 @@ sink="$(pactl info | awk '$1 == "Default" && $2 == "Sink:" {print $3}')"
 pactl list sinks | awk -v sink="$sink" '
     BEGIN {
         ICONsn = "\x0f " # headphone unplugged, not muted
-        ICONsm = "\x12 " # headphone unplugged, muted
+        ICONsm = "\x13 " # headphone unplugged, muted
         ICONhn = "\x0f  " # headphone plugged in, not muted
-        ICONhm = "\x12  " # headphone plugged in, muted
+        ICONhm = "\x13  " # headphone plugged in, muted
     }
     f {
         if ($1 == "Mute:" && $2 == "yes") {
