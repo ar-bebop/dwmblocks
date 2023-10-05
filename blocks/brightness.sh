@@ -3,7 +3,7 @@
 ICON_LOW=""
 ICON_HIGH=""
 
-LIGHT=$(light)
+LIGHT=$(brillo)
 LIGHT=${LIGHT%.*}
 
 if [ "$LIGHT" -gt 50 ]; then
