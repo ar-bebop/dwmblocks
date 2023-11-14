@@ -7,7 +7,7 @@ case "$PHASE" in
         printf "🌕";;
     "Waxing Crescent")
         printf "🌖";;
-    "Firt Quarter")
+    "First Quarter")
         printf "🌗";;
     "Waxing Gibbous")
         printf "🌘";;
@@ -19,4 +19,6 @@ case "$PHASE" in
         printf "🌓";;
     "Waning Crescent")
         printf "🌔";;
+    *)
+        printf "?";;
 esac
