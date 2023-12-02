@@ -19,6 +19,6 @@ cat <<END | xmenu -i | sh &
  System
 	 Lock							xscreensaver-command -lock
 	 Logout						loginctl kill-user $USER
-	⏼ Reboot						reboot
-	⏻ Shutdown						poweroff
+	⏼ Reboot						loginctl reboot
+	⏻ Shutdown						loginctl poweroff
 END
